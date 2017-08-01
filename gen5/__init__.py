@@ -38,7 +38,7 @@ class Gen5(object):
             'price': price
         }
 
-        resp = post('http://localhost:8081/api/uploadCart', data = payload)
+        resp = post('{}/api/uploadCart'.format(self.BASE_URL), data = payload)
 
         if (resp.status_code == codes.accepted):
             return None, resp.json()['resp']
