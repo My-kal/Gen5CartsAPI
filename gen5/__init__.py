@@ -3,12 +3,10 @@
 """__init__.py: Interface for Gen5Carts.com API"""
 
 __author__ = "Dev Mykal"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __data__ = "31-July-2017"
 
-from requests import get, post, exceptions, codes
-from requests.adapters import HTTPAdapter
-from json import load
+from requests import get, post, codes
 
 class Gen5(object):
     """
